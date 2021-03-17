@@ -1,0 +1,12 @@
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\bin\Debug\net5.0\sovtechTest.Shared.deps.json
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\bin\Debug\net5.0\sovtechTest.Shared.dll
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\bin\Debug\net5.0\ref\sovtechTest.Shared.dll
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\bin\Debug\net5.0\sovtechTest.Shared.pdb
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.csprojAssemblyReference.cache
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.AssemblyInfoInputs.cache
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.AssemblyInfo.cs
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.dll
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\ref\sovtechTest.Shared.dll
+C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Shared\obj\Debug\net5.0\sovtechTest.Shared.pdb
