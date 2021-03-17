@@ -82,13 +82,6 @@ using sovtechTest.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 11 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\_Imports.razor"
-using MatBlazor;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/people")]
     public partial class People : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -105,7 +98,7 @@ using MatBlazor;
 
     protected override async Task OnInitializedAsync()
     {
-        people = await Http.GetJsonAsync<PeopleResult>("https://swapi.dev/api/people");
+        people = await Http.GetFromJsonAsync<PeopleResult>("https://swapi.dev/api/people");
 
     }
 

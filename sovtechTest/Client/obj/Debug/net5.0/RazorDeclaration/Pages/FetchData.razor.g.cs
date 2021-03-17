@@ -83,13 +83,6 @@ using sovtechTest.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 11 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\_Imports.razor"
-using MatBlazor;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 2 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Pages\FetchData.razor"
 using sovtechTest.Shared;
 

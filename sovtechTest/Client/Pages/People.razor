@@ -3,7 +3,7 @@
 
 <h1>Star Wars People</h1>
 
-<p>This component demonstrates fetching data from the server.</p>
+<p>This component demonstrates fetching People data from the server.</p>
 
 @if (people == null)
 {
@@ -40,7 +40,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        people = await Http.GetJsonAsync<PeopleResult>("https://swapi.dev/api/people");
+        people = await Http.GetFromJsonAsync<PeopleResult>("https://swapi.dev/api/people");
 
     }
 

@@ -82,13 +82,6 @@ using sovtechTest.Client.Shared;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 11 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\_Imports.razor"
-using MatBlazor;
-
-#line default
-#line hidden
-#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/categories")]
     public partial class Categories : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -97,6 +90,24 @@ using MatBlazor;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 38 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Pages\Categories.razor"
+       
+    private ChuckResponse chuck;
+
+    protected override async Task OnInitializedAsync()
+    {
+        chuck = await chuckService.GetForecastAsync();
+    }
+    private async Task GetNewChoke()
+    {
+        chuck = await chuckService.GetForecastAsync();
+    }
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ChuckNorrisService chuckService { get; set; }
     }
 }
 #pragma warning restore 1591
