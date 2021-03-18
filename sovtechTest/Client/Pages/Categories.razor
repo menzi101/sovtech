@@ -22,8 +22,8 @@ else
             @foreach (var category in jokes.results)
             {
                 <tr>
-                    <td><a href=@category.cat> @category.cat</a></td>
-                    
+                    <td><a href="" @onclick="(async() => await jokeResult())" @onclick:preventDefault> @category.cat</a></td>
+
                 </tr>
             }
         </tbody>
@@ -37,6 +37,13 @@ else
     protected override async Task OnInitializedAsync()
     {
         jokes = await Http.GetFromJsonAsync<chuckNorrisResult>("https://api.chucknorris.io/jokes/categories");
+    }
+
+    public async Task<string> jokeResult()
+    {
+        string searchResponse = await Http.GetStringAsync("https://api.chucknorris.io/jokes/random?category={category}");
+
+        return searchResponse;
     }
 
     class chuckNorrisJokeCategory

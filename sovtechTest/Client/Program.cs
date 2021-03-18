@@ -29,7 +29,7 @@ namespace sovtechTest.Client
             static void AddServices(WebAssemblyHostBuilder builder)
             {
                 builder.Services.AddSingleton<ChuckNorrisService>();
-                builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)}); ;
+                //builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress)}); ;
             }
         }
     }

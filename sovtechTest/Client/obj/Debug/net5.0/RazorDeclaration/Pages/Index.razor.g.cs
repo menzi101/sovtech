@@ -90,6 +90,29 @@ using sovtechTest.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 15 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Pages\Index.razor"
+       
+
+    public async Task<object> jokeResult(string query)
+    {
+        var searchResponse = await Http.GetStringAsync("https://api.chucknorris.io/jokes/search?query={query}");
+
+        return searchResponse;
+    }
+
+    public async Task<object> starResult(string query)
+    {
+        var searchResponse = await Http.GetStringAsync("https://swapi.dev/api/people/?search=r2");
+
+        return searchResponse;
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591

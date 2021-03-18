@@ -9,7 +9,7 @@
       "url": "_content\/MatBlazor\/dist\/matBlazor.js"
     },
     {
-      "hash": "sha256-Zo0O2v9HyfBBteY9qxO0m2Jjul9lUPNb84GvT6l1OmM=",
+      "hash": "sha256-ogqza+LiNpr2LHzAtjNvAEydwsJXtvfvEVPmMXAlOI4=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -805,11 +805,11 @@
       "url": "_framework\/sovtechTest.Shared.pdb"
     },
     {
-      "hash": "sha256-y\/4tTcqujqxtlAvc+FhYlw1KjabQvJx2r60ZTiJKY3I=",
+      "hash": "sha256-0waebDsq8R+B+lL\/Y7nYJu7AJDOGlDozTXMcdiXGHe8=",
       "url": "_framework\/sovtechTest.Client.dll"
     },
     {
-      "hash": "sha256-FcK1AVWchdhZtbc1HZfbSEpBzBoI+EuiJzcMgvULpHM=",
+      "hash": "sha256-f4m\/xZTvEIhTIb6l6MlT8k8N16S3+8DmvdPm0qlLX0M=",
       "url": "_framework\/sovtechTest.Client.pdb"
     },
     {
@@ -1677,5 +1677,5 @@
       "url": "sovtechTest.Client.bundle.scp.css"
     }
   ],
-  "version": "ZfHLlYFI"
+  "version": "44dio9mL"
 };

@@ -101,6 +101,13 @@ using sovtechTest.Client.Shared;
         jokes = await Http.GetFromJsonAsync<chuckNorrisResult>("https://api.chucknorris.io/jokes/categories");
     }
 
+    public async Task<string> jokeResult()
+    {
+        string searchResponse = await Http.GetStringAsync("https://api.chucknorris.io/jokes/random?category={category}");
+
+        return searchResponse;
+    }
+
     class chuckNorrisJokeCategory
     {
         public string[] cat { get; set; }

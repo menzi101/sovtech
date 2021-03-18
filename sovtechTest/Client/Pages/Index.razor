@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject HttpClient Http
 
 <h1 class="text-center text-primary">SovTech Search Engine</h1>
 
@@ -7,6 +8,24 @@
         <input class="form-control form-control-lg w-50 mx-auto mt-4" placeholder="Type here to search." />
     </div>
     <div class="p-2">
-        <button class="btn btn-primary btn-lg">Search the SovTech API</button>
+        <button class="btn btn-primary btn-lg" onclick="(async () => await jokeResult() && starResult())">Search the SovTech API</button>
     </div>
 </div>
+
+@code {
+
+    public async Task<object> jokeResult(string query)
+    {
+        var searchResponse = await Http.GetStringAsync("https://api.chucknorris.io/jokes/search?query={query}");
+
+        return searchResponse;
+    }
+
+    public async Task<object> starResult(string query)
+    {
+        var searchResponse = await Http.GetStringAsync("https://swapi.dev/api/people/?search=r2");
+
+        return searchResponse;
+    }
+
+}
