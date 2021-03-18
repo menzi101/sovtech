@@ -90,7 +90,7 @@ using sovtechTest.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Shared\NavMenu.razor"
+#line 28 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Shared\NavMenu.razor"
        
     private bool collapseNavMenu = true;
 

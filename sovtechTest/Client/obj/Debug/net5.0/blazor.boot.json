@@ -197,12 +197,12 @@
       "netstandard.dll": "sha256-FbW0xcZkySFb6B8yBpUE8XmaiMacDVdXdN9GeDH6xu4=",
       "System.Private.CoreLib.dll": "sha256-AQbVm+Z+NByScjRZWDWQnNUk5PBVgwCSWPLQN4YxxZs=",
       "sovtechTest.Shared.dll": "sha256-RSCCB66inevnXATt8VazlRVQWrBLz3Oj2OfP1ELtyk8=",
-      "sovtechTest.Client.dll": "sha256-OGzY393iaX0F9JJp3qGqZ\/qJS\/71Eg68Fu5P6ikxpkg="
+      "sovtechTest.Client.dll": "sha256-y\/4tTcqujqxtlAvc+FhYlw1KjabQvJx2r60ZTiJKY3I="
     },
     "lazyAssembly": null,
     "pdb": {
       "sovtechTest.Shared.pdb": "sha256-FpvtYg\/SroBXT8RF9jm98sr2F2ArMmen1z6yjm8y0sg=",
-      "sovtechTest.Client.pdb": "sha256-Rk5Iecke+ehUYnVQrMoq9ru0lxMi+lQgtRy5Ew4+jik="
+      "sovtechTest.Client.pdb": "sha256-FcK1AVWchdhZtbc1HZfbSEpBzBoI+EuiJzcMgvULpHM="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-rFG55cwkAnfHzxmxwBL2tTwfj8X8cjcSEAlco4bc1eo=",

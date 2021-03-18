@@ -1,49 +1,54 @@
 ﻿@page "/categories"
-@inject ChuckNorrisService chuckService
+@inject HttpClient Http
 
 <h1>Chuck Norris jokes</h1>
 
-<p>The component gives you random chuck norris jokes </p>
+<p>The component gives you the categories of Chuck Norris jokes </p>
 
-@if (chuck == null)
+
+@if (jokes == null)
 {
     <p><em>Loading...</em></p>
 }
 else
 {
-    <p>
-
-    </p>
     <table class="table">
         <thead>
             <tr>
-                <th>Chuck</th>
-                <th>Joke</th>
+                <th>Category</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td><img src="@chuck.icon_url" asp-append-version="true" width="25" /></td>
-                <td>@chuck.value</td>
-            </tr>
+            @foreach (var category in jokes.results)
+            {
+                <tr>
+                    <td><a href=@category.cat> @category.cat</a></td>
+                    
+                </tr>
+            }
         </tbody>
     </table>
-
 }
-<p>Lets have another one</p>
-
-<button class="btn btn-primary" @onclick="(async () => await GetNewChoke())">Get new</button>
-
 
 @code {
-    private ChuckResponse chuck;
+
+    chuckNorrisResult jokes;
 
     protected override async Task OnInitializedAsync()
     {
-        chuck = await chuckService.GetForecastAsync();
+        jokes = await Http.GetFromJsonAsync<chuckNorrisResult>("https://api.chucknorris.io/jokes/categories");
     }
-    private async Task GetNewChoke()
+
+    class chuckNorrisJokeCategory
     {
-        chuck = await chuckService.GetForecastAsync();
+        public string[] cat { get; set; }
     }
+    class chuckNorrisResult
+    {
+        public int count { get; set; }
+        public string next { get; set; }
+        public string previous { get; set; }
+        public chuckNorrisJokeCategory[] results { get; set; }
+    }
+
 }

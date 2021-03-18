@@ -91,23 +91,33 @@ using sovtechTest.Client.Shared;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 38 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Pages\Categories.razor"
+#line 33 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Pages\Categories.razor"
        
-    private ChuckResponse chuck;
+
+    chuckNorrisResult jokes;
 
     protected override async Task OnInitializedAsync()
     {
-        chuck = await chuckService.GetForecastAsync();
+        jokes = await Http.GetFromJsonAsync<chuckNorrisResult>("https://api.chucknorris.io/jokes/categories");
     }
-    private async Task GetNewChoke()
+
+    class chuckNorrisJokeCategory
     {
-        chuck = await chuckService.GetForecastAsync();
+        public string[] cat { get; set; }
     }
+    class chuckNorrisResult
+    {
+        public int count { get; set; }
+        public string next { get; set; }
+        public string previous { get; set; }
+        public chuckNorrisJokeCategory[] results { get; set; }
+    }
+
 
 #line default
 #line hidden
 #nullable disable
-        [global::Microsoft.AspNetCore.Components.InjectAttribute] private ChuckNorrisService chuckService { get; set; }
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private HttpClient Http { get; set; }
     }
 }
 #pragma warning restore 1591
