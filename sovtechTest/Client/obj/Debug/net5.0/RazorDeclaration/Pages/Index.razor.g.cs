@@ -90,6 +90,26 @@ using sovtechTest.Client.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 18 "C:\Users\Makro Centurion\OneDrive\Jobs\SovTech\SovTecC#\sovtech\sovtechTest\Client\Pages\Index.razor"
+       
+    // Initialize SearchTerm to "" to prevent null's
+    string SearchTerm { get; set; } = "";
+
+    // Imagine this was retrieved from an API, just hardcoding for demo purposes
+    List<ToDoItem> ToDoItems => new List<ToDoItem>
+{
+        new ToDoItem { Name = "Garbage" },
+        new ToDoItem { Name = "Dishes" },
+        new ToDoItem { Name = "Wash clothes" },
+        new ToDoItem { Name = "Water flowers" }
+    };
+
+    List<ToDoItem> FilteredToDos => ToDoItems.Where(i => i.Name.ToLower().Contains(SearchTerm.ToLower())).ToList();
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591
